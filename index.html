@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filtro Bento</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="camera-container">
-    <video id="video" autoplay playsinline></video>
-    <img src="assets/overlay.png" class="overlay"/>
-    <button id="captureBtn">📸 Tirar Foto</button>
+    <video id="video" autoplay playsinline muted></video>
+    <img src="assets/overlay.png" class="overlay">
+
+    <!-- Botão bolinha -->
+    <button id="captureBtn" class="capture-btn"></button>
   </div>
+
   <canvas id="canvas"></canvas>
+
   <script src="script.js"></script>
 </body>
 </html>
