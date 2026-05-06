@@ -4,7 +4,7 @@ body {
   background: black;
 }
 
-/* ocupa tela inteira */
+/* tela inteira */
 .camera-container {
   position: fixed;
   width: 100vw;
@@ -18,10 +18,10 @@ video {
   object-fit: cover;
 }
 
-/* filtro */
+/* 🔥 filtro mais pra cima */
 .overlay {
   position: absolute;
-  top: 50%;
+  top: 38%; /* controla altura do filtro */
   left: 50%;
   width: 100%;
   height: 100%;
@@ -30,10 +30,10 @@ video {
   pointer-events: none;
 }
 
-/* botão estilo instagram */
+/* 🔘 botão estilo Instagram em cima do Bento */
 .capture-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 130px; /* controla altura do botão */
   left: 50%;
   transform: translateX(-50%);
   
