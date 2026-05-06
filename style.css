@@ -18,32 +18,37 @@ video {
   object-fit: cover;
 }
 
-/* 🔥 filtro mais pra cima */
+/* 🔥 filtro centralizado com espaço igual */
 .overlay {
   position: absolute;
-  top: 38%; /* controla altura do filtro */
+  top: 50%;
   left: 50%;
+
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+
+  max-height: 95vh; /* controla o espaço em cima/baixo */
+
   transform: translate(-50%, -50%);
+
+  object-fit: contain;
   pointer-events: none;
 }
 
-/* 🔘 botão estilo Instagram em cima do Bento */
+/* 🔘 botão (mantido onde você gostou) */
 .capture-btn {
   position: absolute;
-  bottom: 130px; /* controla altura do botão */
+  bottom: 130px;
   left: 50%;
   transform: translateX(-50%);
-  
+
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  
+
   background: white;
   border: 5px solid #ff9800;
-  
+
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
