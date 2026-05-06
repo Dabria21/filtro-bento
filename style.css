@@ -20,21 +20,21 @@ video {
 
 /* 🔥 filtro centralizado com espaço igual */
 .overlay {
- .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
 
   width: 100%;
   height: auto;
-  max-height: 95vh;
+
+  max-height: 95vh; /* controla o espaço em cima/baixo */
+
+  transform: translate(-50%, -50%);
 
   object-fit: contain;
   pointer-events: none;
-
-  /* 🔥 ajuste fino manual (ESSA É A CHAVE) */
-  transform: translate(-50%, -55%);
 }
+
 /* 🔘 botão (mantido onde você gostou) */
 .capture-btn {
   position: absolute;
